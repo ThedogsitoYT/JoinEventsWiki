@@ -4,7 +4,6 @@
   "description": "Descripción de tu proyecto",
   "main": "index.html",
   "scripts": {
-    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["palabra clave1", "palabra clave2"],
