@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>JoinEvents wiki</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="plus">+</h1>
+        <h2 class="name">JoinEvents</h2>
+
+        <a href="history.html" class="history">History versions</a>
+        <a href="index.html" class="home">Home</a>
+    </header>
+
+    <div class="content">
+        <div class="sidebar">
+            <p class="sidebar-text"><span class="neon-text-gray">GETTING STARTED</span></p>
+
+            <a class="sidebar-content" href="index.html">JoinEvents Wiki</a>
+            <a class="sidebar-content" href="ots.html">How to start</a>
+
+            <li class="separation"></li>
+            <p class="sidebar-text"><span class="neon-text-gray">CONFIGURING JOINEVENTS</span></p>
+
+            <a class="sidebar-content" href="hub.html">Hub</a>
+            <a class="sidebar-content" href="titles.html">Titles</a>
+            <a class="sidebar-principal" href="warps.html">Warps</a>
+            <a class="sidebar-content">Sounds</a>
+            <a class="sidebar-content">BossBar</a>
+            <a class="sidebar-content">Fireworks</a>
+            <a class="sidebar-content">Ip protect</a>
+            <a class="sidebar-content">Scoreboard</a>
+            <a class="sidebar-content">Launch pads</a>
+            <a class="sidebar-content">Join messages</a>
+            <a class="sidebar-content">Join commands</a>
+            <a class="sidebar-content">CustomItems Join</a>
+
+            <li class="separation"></li>
+            <p class="sidebar-text"><span class="neon-text-gray">USING JOINEVENTS</span></p>
+
+            <a class="sidebar-content">Colors</a>
+            <a class="sidebar-content">Variables</a>
+            <a class="sidebar-content">Placeholders</a>
+            <a class="sidebar-content">Configurations</a>
+
+            <li class="separation"></li>
+            <p class="sidebar-text"><span class="neon-text-gray">MODULES</span></p>
+
+            <a class="sidebar-content">JoinEvents Bungee</a>
+
+            <li class="separation"></li>
+
+            <p class="sidebar-text"><span class="neon-text-gray">REFERENCE</span></p>
+            <a class="sidebar-content">Commands</a>
+            <a class="sidebar-content">Permissions</a>
+        </div>
+
+        <main id="main">
+            <div class="loader-wrapper" id="loader">
+                <div class="loader">
+                    <i class="fas fa-circle-notch fa-spin"></i>
+                </div>
+            </div>
+
+            <h1>Create Warps</h1>
+
+            <li class="separation"></li>
+
+            <p>To create a warp you must take into account the following commands
+                <span class="neon-text-permission">/setwarp < name > </span> <span class="neon-text-gray">-</span>
+                <span class="neon-text-permission">/warp < name > </span> <span class="neon-text-gray">-</span>
+                <span class="neon-text-permission">/delwarp < name > </span></p>
+
+            <li class="separation"></li>
+
+            <p>The main commands are: 
+            </span> <span class="neon-text-permission">/setwarp < name > </span> </span> <span class="neon-text-gray">-</span>
+            <span class="neon-text-permission">/warp < name > </span> <span class="neon-text-gray">-</span>
+            <span class="neon-text-permission">/warps </span> </span> <span class="neon-text-gray">-</span>
+            <span class="neon-text-permission">/delwarp < name > </span> </span> <span class="neon-text-gray">-</span>
+            <span class="neon-text-permission">/listwarp</span></p>
+            </p>
+
+            <li class="separation"></li>
+
+            <h2>Set the warp</h2>
+            
+            <p>
+                To create the warp you have to execute the command 
+                <span class="neon-text-permission">/setwarp < name ></span> 
+                where it says to set the name, 
+                put whatever you want. That name will later be used for the
+                <span class="neon-text-permission">/warp < name of the warp ></span> 
+                command, which will use
+                the name you set when setting the warp. warp and that name will also be in the config
+                to easily recognize that warp. example:
+            </p>
+
+            <li class="separation"></li>
+
+            <div class="code-block">
+                <div id="copied-message" class="copied-message">Copied</div>
+                <h3><span class="neon-text-gray">Commands</span></h3>
+                <button class="copy-button" onclick="copyCode()">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+                <pre>
+                    <code> 
+                        <span class="neon-text-gray">1</span> <span class="neon-text">Warps:</span> 
+                        <span class="neon-text-gray">2</span> <span class="neon-text">  SecondsWait: 3:</span> 
+                        <span class="neon-text-gray">3</span> <span class="neon-text">  minepvp:</span>
+                        <span class="neon-text-gray">4</span> <span class="neon-text">    X: 29,454</span>
+                        <span class="neon-text-gray">5</span> <span class="neon-text">    Y: '20'</span>  
+                        <span class="neon-text-gray">6</span> <span class="neon-text">    Z: 90</span> 
+                        <span class="neon-text-gray">7</span> <span class="neon-text">    Yaw: 291,437</span> 
+                        <span class="neon-text-gray">8</span> <span class="neon-text">    Pitch: 212,378</span> 
+                        <span class="neon-text-gray">9</span> <span class="neon-text">    World: minepvp</span>
+                        <span class="neon-text-gray">10</span> <span class="neon-text">  spawn:</span>
+                        <span class="neon-text-gray">11</span> <span class="neon-text">    X: 19,454</span>
+                        <span class="neon-text-gray">12</span> <span class="neon-text">    Y: '50'</span>  
+                        <span class="neon-text-gray">13</span> <span class="neon-text">    Z: 20</span> 
+                        <span class="neon-text-gray">14</span> <span class="neon-text">    Yaw: 91,437</span> 
+                        <span class="neon-text-gray">15</span> <span class="neon-text">    Pitch: 12,378</span> 
+                        <span class="neon-text-gray">16</span> <span class="neon-text">    World: world</span>
+                    </code>
+                </pre>
+            </div>
+
+            <li class="separation"></li>
+
+            <h2>Delete the warp</h2>
+
+            <p>To remove the warp you just have to run <span class="neon-text-permission">/delwarp < name of the warp ></span>
+                and it will be removed from the menu, command and config</p>
+
+            <li class="separation"></li>
+
+            <h2>Configurate the warps panel</h2>
+
+            <p>In order to enable the panel with the <span class="neon-text-permission">/warps</span>
+                command you have to have the <span class="neon-text-link">Commands Panel</span> plugin
+                <span class="neon-text-gray">(for now it is only compatible with that plugin)</span>
+                then you can configure the panel to your liking but mainly it will have 2
+                main designs that will be shown in the following images:</p>
+
+        </main>
+        <script src="script.js"></script>
+
+        <script>
+            function copyCode() {
+                const codeBlock = document.querySelector('.code-block code');
+                const linesToCopy = [];
+
+                codeBlock.querySelectorAll('.neon-text').forEach(line => {
+                    linesToCopy.push(line.textContent);
+                });
+
+                const textArea = document.createElement('textarea');
+                textArea.value = linesToCopy.join('\n');
+                document.body.appendChild(textArea);
+
+                textArea.select();
+                document.execCommand('copy');
+
+                document.body.removeChild(textArea);
+
+                const copiedMessage = document.getElementById('copied-message');
+
+                copiedMessage.classList.add('show');
+
+                setTimeout(function () {
+                    copiedMessage.classList.remove('show');
+                }, 1000);
+            }
+        </script>
+    </div>
+</body>
+
+</html>
